@@ -1,0 +1,26 @@
+* {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	position: relative;
+	background: linear-gradient(to right, rgb(34, 122, 236), rgb(138, 96, 238));
+	font-size: 2em;
+	color: #fff;
+}

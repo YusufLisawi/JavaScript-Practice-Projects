@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="quizContainer">
+			<div class="score">
+				<h1>You Got</h1>
+				<h2 id="result">0</h2>
+				<p id="qsts">out of</p>
+				<button onclick="location.reload()" id="btnReload">
+					Try again
+				</button>
+			</div>
+			<h2 id="question">How would you like Premium to help?</h2>
+			<p>Think before you choose you have only one try</p>
+			<p></p>
+			<div class="questions">
+				<label class="answerWrapper" for="a">
+					<label class="radio-btn">
+						<input
+							type="radio"
+							name="answer"
+							class="answer"
+							id="a"
+						/>
+						<span class="checkmark"></span>
+					</label>
+					<p id="text-a">To job search</p>
+				</label>
+				<label class="answerWrapper" for="b">
+					<label class="radio-btn">
+						<input
+							type="radio"
+							name="answer"
+							class="answer"
+							id="b"
+						/>
+						<span class="checkmark"></span>
+					</label>
+					<p id="text-b">To job search</p>
+				</label>
+				<label class="answerWrapper" for="c">
+					<label class="radio-btn">
+						<input
+							type="radio"
+							name="answer"
+							class="answer"
+							id="c"
+						/>
+						<span class="checkmark"></span>
+					</label>
+					<p id="text-c">To job search</p>
+				</label>
+				<label class="answerWrapper" for="d">
+					<label class="radio-btn">
+						<input
+							type="radio"
+							name="answer"
+							class="answer"
+							id="d"
+						/>
+						<span class="checkmark"></span>
+					</label>
+					<p id="text-d">To job search</p>
+				</label>
+			</div>
+			<button id="btnSubmit">Submit</button>
+		</div>
+	</body>
+</html>

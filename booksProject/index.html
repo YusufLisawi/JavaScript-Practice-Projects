@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./zephyr/bootstrap.css"> -->
+    <link rel="stylesheet" href="./Lux/bootstrap.css">
+    <link rel="stylesheet" href="./Lux/all.min.css">
+    <link rel="stylesheet" href="./Lux/add-style.css">
+    <title>MyBookList App</title>
+</head>
+<body>
+    <div class="container mt-4">
+       
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-warning"></i>
+            My<span class="text-warning">Book</span>List
+        </h1>
+
+        <form id="book-form">
+            <div class="form-group my-4">
+                <label for="title" class="py-2">Title</label>
+                <input type="text" id="title" class="form-control border-2" placeholder="Enter the title of the book">
+            </div>
+            <div class="form-group my-4">
+                <label for="author" class="py-2">Author</label>
+                <input type="text" id="author" class="form-control border-2" placeholder="Enter the name of the author">
+            </div>
+            <div class="form-group my-4">
+                <label for="isbn" class="py-2">ISBN#</label>
+                <input type="text" id="isbn" class="form-control border-2" placeholder="Enter the ISBN number">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary w-100 my-4 bg-warning border-0">
+        </form>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
